@@ -7,7 +7,6 @@ function emptyInputSginIp($name, $email, $username, $pwd, $rpwd)
         $result = true;
     } else {
         $result = false;
-
     }
     return $result;
 }
@@ -114,6 +113,7 @@ function loginUser($con, $username, $pwd)
         session_start();
         $_SESSION["user_id"] = $uidExists['user_id'];
         $_SESSION["uid"] = $uidExists['user_uid'];
+        $_SESSION["email"] = $uidExists['user_email'];
         header("Location: ../index.php");
         exit();
     }

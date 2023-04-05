@@ -42,7 +42,7 @@ if (isset($_SESSION["user_id"])) {
                 <a type="button" href="profile.php" class="btn btn-secondary">Profile</a>
             </li>';
     echo '  <li class="nav-item">
-                <a type="button" href="includes/logout.inc.php" class="btn btn-secondary">Logout</a>
+                <a type="button" href="includes/logout.inc.php" class="btn btn-danger">Logout</a>
             </li>';
 } else {
     echo '  <li class="nav-item">
